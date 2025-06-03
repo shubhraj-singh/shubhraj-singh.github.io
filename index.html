@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shubh Raj Singh | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { font-size: 1.1rem; margin-top: 0.5rem; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: #002752;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 0.3rem;
+    }
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #002752;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+    <script>
+  const pic = document.getElementById("profile-pic-wrapper");
+  pic.addEventListener("mousemove", (e) => {
+    const x = e.offsetX - pic.offsetWidth / 2;
+    const y = e.offsetY - pic.offsetHeight / 2;
+    const rotateX = -y / 10;
+    const rotateY = x / 10;
+    pic.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  pic.addEventListener("mouseleave", () => {
+    pic.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+</script>
+
+    <header>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transform: rotateY(0deg);
+      transition: transform 0.6s ease;
+      perspective: 1000px;
+    " id="profile-pic-wrapper">
+      <img src="vision.jpg" alt="Profile Photo" style="width: 100%; height: 100%; object-fit: cover;" />
+    </div>
+    <h1>Shubh Raj Singh</h1>
+    <p>Aspiring Full-Stack Developer | Problem Solver | MNC Dreamer</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Computer Science student with a strong interest in algorithms, full-stack development, and building real-world projects.
+    I aim to work at a top product-based MNC where I can grow alongside highly talented minds and a great work culture.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">C, C++</div>
+    <div class="card">Java</div>
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Git, GitHub</div>
+    <div class="card">Problem Solving (Codeforces Rank 150 in Div.2)</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Grocery Delivery App</h3>
+      <p>Full-stack on-demand grocery delivery system with location-aware features and order tracking.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This responsive single-file portfolio with HTML/CSS/JS showcasing all relevant details and skills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>High School (Class 10): 90% (2018–2019)</li>
+    <li>Secondary Education (Class 12): 83.43% (2020–2021)</li>
+    <li>Current CGPA: 7.55</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: singh.shubhraj06@gmail.com</p>
+  <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/your-profile</a></p>
+  <p>GitHub: <a href="#" target="_blank">github.com/your-username</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Shubh Raj Singh. All rights reserved.
+</footer>
+
+</body>
+</html>
