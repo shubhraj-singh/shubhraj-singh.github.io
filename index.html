@@ -2,255 +2,258 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubh Raj Singh | Portfolio</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Raj | DEVELOPER</title>
+    <link rel="icon" href="web.png" type="image/x-icon">
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      padding-top: 3rem;
-      /* Space for fixed navbar */
-    }
+    <link rel="stylesheet" href="style.css">
 
-    header {
-      background-color: #0d6efd;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-
-    nav {
-  position: fixed;
-  top: 1.25rem; /* adds space from top */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%; /* shrinks the nav width */
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background: linear-gradient(90deg, #0052cc, #0069ff);
-  padding: 0.75rem 1.5rem;
-  z-index: 1000;
-  box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
-  border-radius: 15px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  user-select: none;
-  transition: background 0.3s ease;
-}
-
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      position: relative;
-      padding: 0.25rem 0;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      left: 0;
-      bottom: -5px;
-      background-color: #fff;
-      transition: width 0.3s ease;
-      border-radius: 2px;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: #e0eaff;
-    }
-
-    nav a:hover::after,
-    nav a:focus::after {
-      width: 100%;
-    }
-
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #0d6efd;
-      border-bottom: 2px solid #0d6efd;
-      padding-bottom: 0.3rem;
-    }
-
-    .projects,
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .card {
-      background: #fff;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      flex: 1 1 250px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
-
-    footer {
-      background: #002752;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
- <header>
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <div style="
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-bottom: 1rem;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        transform: rotateY(0deg);
-        transition: transform 0.6s ease;
-        perspective: 1000px;
-      " id="profile-pic-wrapper">
-        <img src="vision.jpg" alt="Profile Photo" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-      <h1>Shubh Raj Singh</h1>
-      <p>Aspiring Full-Stack Developer | Problem Solver</p>
-    </div>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Computer Science student with a strong interest in algorithms, full-stack development, and
-      building real-world projects.
-      I aim to work at a top product-based MNC where I can grow alongside highly talented minds and a great work
-      culture.
-    </p>
-  </section>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Shubh Raj.</a>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">C</div>
-      <div class="card">Python</div>
-      <div class="card">Java</div>
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-    </div>
-  </section>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Grocery Delivery App</h3>
-        <p>Full-stack on-demand grocery delivery system with location-aware features and order tracking.</p>
-      </div>
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>This responsive single-file portfolio with HTML/CSS/JS showcasing all relevant details and skills.</p>
-      </div>
-    </div>
-  </section>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Secured Rank 150 in Codeforces Round 1028 (Div. 2) among 28,741 participants</li>
-      <li>Consistently solved 100+ problems on online judges like Codeforces, LeetCode</li>
-      <li>Completed CS50 by Harvard (Intro to Computer Science)</li>
-      <li>Built and deployed multiple full-stack projects with modern web technologies</li>
-    </ul>
-  </section>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Shubh Raj Singh</span></h1>
+            <div class="text-animate">
+                <h3>Frontend Developer</h3>
+            </div>
+            <p>AI & ML enthusiast | Engineer</p>
+            <p>Tech enthusiast with a passion for development.</p>
 
+            <div class="btn-box">
+                <a href="#" class="btn">Hire ME</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </div>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>High School (Class 10): 90% (2018–2019)</li>
-      <li>Secondary Education (Class 12): 83.43% (2020–2021)</li>
-      <li>Bachelor Of Technology in Computer Science and Engineering - G L Bajaj Group Of Institution, Mathura
-      </li>
-      <li>Current CGPA: 7.55</li>
-    </ul>
-  </section>
+        <div class="home-sci">
+            <a href="#"><i class='bx bx1-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:singh.shubhraj06@gmail.com">singh.shubhraj06@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shubh-raj-singh-687023255/"
-        target="_blank">https://www.linkedin.com/in/shubh-raj-singh-687023255/</a></p>
-    <p>GitHub: <a href="https://github.com/shubhraj-singh" target="_blank">https://github.com/shubhraj-singh</a></p>
-  </section>
+        <div class="home-imgHover"></div>
+    </section>
 
-  <footer>
-    &copy; 2025 Shubh Raj Singh. All rights reserved.
-  </footer>
+    <!-- about section design -->
 
-  <script>
-    const pic = document.getElementById("profile-pic-wrapper");
-    pic.addEventListener("mousemove", (e) => {
-      const x = e.offsetX - pic.offsetWidth / 2;
-      const y = e.offsetY - pic.offsetHeight / 2;
-      const rotateX = -y / 10;
-      const rotateY = x / 10;
-      pic.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
 
-    pic.addEventListener("mouseleave", () => {
-      pic.style.transform = "rotateX(0deg) rotateY(0deg)";
-    });
-  </script>
+        <div class="about-img">
+            <img src="about.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Frontend Developer!</h3>
+            <p>Highly motivated recent graduate with a bachelor's degree in computer science seeking an entry-level position in software development. Proficient in Java and C. Strong problem-solving and analytical skills, with experience in building projects. Eager to apply technical knowledge to contribute to innovative projects.</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+     <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2022 - 2026 | <em>CGPA: 7.55</em></div>
+                            <h3>G L Bajaj Group of Institution Mathura – APJ Abdul Kalam Technical University</h3>
+                            <p>Bachelor of Technology in Computer Science and Engineering</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2020 - 2021 | <em>Percentage: 83.43%</em></div>
+                            <h3>Central Board of Secondary Education</h3>
+                            <p>Intermediate School (XII) </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2018 - 2019 | <em>Percentage: 90%</em></div>
+                            <h3>Central Board of Secondary Education</h3>
+                            <p>High School (X)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- 
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2022 - 2026</div>
+                            <h3>G L Bajaj Group of Institution Mathura – APJ Abdul Kalam Technical University</h3>
+                            <p>Bachelor of Technology in Computer Science and Engineering</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2020 - 2021</div>
+                            <h3>Central Board of Secondary Education</h3>
+                            <p>Intermediate School (XII) </p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2018 - 2019</div>
+                            <h3>Central Board of Secondary Education</h3>
+                            <p>High School (X)</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+     </section>
+
+     <!-- skills ssection design -->
+      <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <div class="title">Coding Skills</div>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                        <div class="progress">
+                            <h3>CSS <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JAVA <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="skills-column">
+                <div class="title">Coding Skills</div>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+      </section>
+
+      <!-- Contact section design -->
+
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+      </section>
+
+      <!-- footer design -->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Shubh Raj Singh | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
