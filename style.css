@@ -696,7 +696,7 @@ span {
 }
 
 /* ANIMATION RELOAD AND SCROLL */
-.animate {
+/* .animate {
     position: absolute;
     top: 0;
     right: 0;
@@ -739,7 +739,7 @@ section:nth-child(odd) .animate.scroll {
 .footer.show-animate .animate.scroll{
     transition-delay: calc(.3s * var(--i));
     width: 0;
-}
+} */
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
